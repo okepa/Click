@@ -126,6 +126,8 @@ namespace Click
         {
             Random rnd = new Random();
             int wait;
+            int minimum;
+            int maximum;
             int count = 0;
             Boolean loop = true;
 
@@ -137,14 +139,18 @@ namespace Click
             MouseEvent[1].Data = CreateMouseInput(0, 0, 0, 0, MOUSEEVENTF_LEFTUP);
 
             Console.WriteLine("Start interval thread");
-            Int32.TryParse(intervalLowerBoundLabel.Text, out int lowerBound);
+            Int32.TryParse(intervalLowerBoundTextBox.Text, out int lowerBound);
             Int32.TryParse(intervalUpperBoundTextBox.Text, out int upperBound);
+            Console.WriteLine(lowerBound);
+            Console.WriteLine(upperBound);
             int X = Cursor.Position.X;
             int Y = Cursor.Position.Y;
             while (loop)
             {
-                Console.WriteLine(count);
-                wait = rnd.Next(lowerBound, upperBound) * 1000;
+                minimum = lowerBound * 1000;
+                maximum = upperBound * 1000;
+                wait = rnd.Next(minimum, maximum);
+                Console.WriteLine(wait);
                 SendInput((uint)MouseEvent.Length, MouseEvent, Marshal.SizeOf(MouseEvent[0].GetType()));
                 Thread.Sleep(wait);
                 count++;
