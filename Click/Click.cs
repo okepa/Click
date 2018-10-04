@@ -142,7 +142,7 @@ namespace Click
 
             int X = Cursor.Position.X;
             int Y = Cursor.Position.Y;
-            for (int i = 0; i < itemAmount; i++)
+            for (int i = 0; i < itemAmount * 2; i++)
             {
                 wait = rnd.Next(lowerBound, upperBound);
                 Console.WriteLine(wait);
