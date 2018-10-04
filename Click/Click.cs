@@ -12,9 +12,9 @@ using System.Threading;
 
 namespace Click
 {
-    public partial class Form1 : Form
+    public partial class Click : Form
     {
-        public Form1()
+        public Click()
         {
             InitializeComponent();
         }

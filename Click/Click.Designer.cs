@@ -1,6 +1,6 @@
 ﻿namespace Click
 {
-    partial class Form1
+    partial class Click
     {
         /// <summary>
         /// Required designer variable.
@@ -161,7 +161,7 @@
             this.itemAmountLabel.TabIndex = 13;
             this.itemAmountLabel.Text = "Item Amount";
             // 
-            // Form1
+            // Click
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -180,8 +180,8 @@
             this.Controls.Add(this.xTextBox);
             this.Controls.Add(this.yTextBox);
             this.Controls.Add(this.button1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Click";
+            this.Text = "Click";
             this.ResumeLayout(false);
             this.PerformLayout();
 
