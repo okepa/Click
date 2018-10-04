@@ -67,7 +67,6 @@ namespace Click
 
         private void SimulateMouseClick()
         {
-            // Linksklick simulieren: Maustaste drücken und loslassen
             Input[] MouseEvent = new Input[2];
             MouseEvent[0].Type = 0;
             MouseEvent[0].Data = CreateMouseInput(0, 0, 0, 0, MOUSEEVENTF_LEFTDOWN);
@@ -77,23 +76,6 @@ namespace Click
 
             SendInput((uint)MouseEvent.Length, MouseEvent, Marshal.SizeOf(MouseEvent[0].GetType()));
         }
-
-        //private void IntervalLeftClick(int lowerBound, int upperBound)
-        //{
-        //    Random rnd = new Random();
-        //    int wait;
-        //    // Linksklick simulieren: Maustaste drücken und loslassen
-        //    Input[] MouseEvent = new Input[2];
-        //    MouseEvent[0].Type = 0;
-        //    MouseEvent[0].Data = CreateMouseInput(0, 0, 0, 0, MOUSEEVENTF_LEFTDOWN);
-
-        //    MouseEvent[1].Type = 0; // INPUT_MOUSE; 
-        //    MouseEvent[1].Data = CreateMouseInput(0, 0, 0, 0, MOUSEEVENTF_LEFTUP);
-
-        //    wait = rnd.Next(lowerBound, upperBound) * 1000;
-        //    SendInput((uint)MouseEvent.Length, MouseEvent, Marshal.SizeOf(MouseEvent[0].GetType()));
-        //    Thread.Sleep(wait);
-        //}
 
         private void SimulateMouseMove(int x, int y)
         {
