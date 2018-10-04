@@ -40,6 +40,8 @@
             this.StartButton = new System.Windows.Forms.Button();
             this.countButton = new System.Windows.Forms.Button();
             this.countTextBox = new System.Windows.Forms.TextBox();
+            this.itemAmountTextBox = new System.Windows.Forms.TextBox();
+            this.itemAmountLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -118,7 +120,7 @@
             // 
             // StartButton
             // 
-            this.StartButton.Location = new System.Drawing.Point(361, 107);
+            this.StartButton.Location = new System.Drawing.Point(327, 169);
             this.StartButton.Name = "StartButton";
             this.StartButton.Size = new System.Drawing.Size(75, 23);
             this.StartButton.TabIndex = 9;
@@ -128,7 +130,7 @@
             // 
             // countButton
             // 
-            this.countButton.Location = new System.Drawing.Point(46, 198);
+            this.countButton.Location = new System.Drawing.Point(46, 218);
             this.countButton.Name = "countButton";
             this.countButton.Size = new System.Drawing.Size(75, 23);
             this.countButton.TabIndex = 10;
@@ -138,16 +140,34 @@
             // 
             // countTextBox
             // 
-            this.countTextBox.Location = new System.Drawing.Point(137, 198);
+            this.countTextBox.Location = new System.Drawing.Point(136, 219);
             this.countTextBox.Name = "countTextBox";
             this.countTextBox.Size = new System.Drawing.Size(100, 22);
             this.countTextBox.TabIndex = 11;
+            // 
+            // itemAmountTextBox
+            // 
+            this.itemAmountTextBox.Location = new System.Drawing.Point(205, 170);
+            this.itemAmountTextBox.Name = "itemAmountTextBox";
+            this.itemAmountTextBox.Size = new System.Drawing.Size(100, 22);
+            this.itemAmountTextBox.TabIndex = 12;
+            // 
+            // itemAmountLabel
+            // 
+            this.itemAmountLabel.AutoSize = true;
+            this.itemAmountLabel.Location = new System.Drawing.Point(202, 141);
+            this.itemAmountLabel.Name = "itemAmountLabel";
+            this.itemAmountLabel.Size = new System.Drawing.Size(86, 17);
+            this.itemAmountLabel.TabIndex = 13;
+            this.itemAmountLabel.Text = "Item Amount";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(491, 417);
+            this.Controls.Add(this.itemAmountLabel);
+            this.Controls.Add(this.itemAmountTextBox);
             this.Controls.Add(this.countTextBox);
             this.Controls.Add(this.countButton);
             this.Controls.Add(this.StartButton);
@@ -181,6 +201,8 @@
         private System.Windows.Forms.Button StartButton;
         private System.Windows.Forms.Button countButton;
         private System.Windows.Forms.TextBox countTextBox;
+        private System.Windows.Forms.TextBox itemAmountTextBox;
+        private System.Windows.Forms.Label itemAmountLabel;
     }
 }
 
