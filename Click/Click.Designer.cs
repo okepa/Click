@@ -42,11 +42,17 @@
             this.countTextBox = new System.Windows.Forms.TextBox();
             this.itemAmountTextBox = new System.Windows.Forms.TextBox();
             this.itemAmountLabel = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(268, 24);
+            this.button1.Location = new System.Drawing.Point(250, 18);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -56,14 +62,14 @@
             // 
             // yTextBox
             // 
-            this.yTextBox.Location = new System.Drawing.Point(152, 24);
+            this.yTextBox.Location = new System.Drawing.Point(134, 18);
             this.yTextBox.Name = "yTextBox";
             this.yTextBox.Size = new System.Drawing.Size(100, 22);
             this.yTextBox.TabIndex = 1;
             // 
             // xTextBox
             // 
-            this.xTextBox.Location = new System.Drawing.Point(46, 24);
+            this.xTextBox.Location = new System.Drawing.Point(28, 18);
             this.xTextBox.Name = "xTextBox";
             this.xTextBox.Size = new System.Drawing.Size(100, 22);
             this.xTextBox.TabIndex = 2;
@@ -88,7 +94,7 @@
             // 
             // intervalLowerBoundTextBox
             // 
-            this.intervalLowerBoundTextBox.Location = new System.Drawing.Point(46, 107);
+            this.intervalLowerBoundTextBox.Location = new System.Drawing.Point(31, 30);
             this.intervalLowerBoundTextBox.Name = "intervalLowerBoundTextBox";
             this.intervalLowerBoundTextBox.Size = new System.Drawing.Size(100, 22);
             this.intervalLowerBoundTextBox.TabIndex = 5;
@@ -96,16 +102,16 @@
             // intervalLowerBoundLabel
             // 
             this.intervalLowerBoundLabel.AutoSize = true;
-            this.intervalLowerBoundLabel.Location = new System.Drawing.Point(43, 78);
+            this.intervalLowerBoundLabel.Location = new System.Drawing.Point(28, 10);
             this.intervalLowerBoundLabel.Name = "intervalLowerBoundLabel";
-            this.intervalLowerBoundLabel.Size = new System.Drawing.Size(141, 17);
+            this.intervalLowerBoundLabel.Size = new System.Drawing.Size(145, 17);
             this.intervalLowerBoundLabel.TabIndex = 6;
-            this.intervalLowerBoundLabel.Text = "Interval Lower Bound";
+            this.intervalLowerBoundLabel.Text = "Interval Lower Bound ";
             // 
             // intervalUpperBoundLabel
             // 
             this.intervalUpperBoundLabel.AutoSize = true;
-            this.intervalUpperBoundLabel.Location = new System.Drawing.Point(202, 78);
+            this.intervalUpperBoundLabel.Location = new System.Drawing.Point(187, 10);
             this.intervalUpperBoundLabel.Name = "intervalUpperBoundLabel";
             this.intervalUpperBoundLabel.Size = new System.Drawing.Size(142, 17);
             this.intervalUpperBoundLabel.TabIndex = 7;
@@ -113,14 +119,14 @@
             // 
             // intervalUpperBoundTextBox
             // 
-            this.intervalUpperBoundTextBox.Location = new System.Drawing.Point(205, 107);
+            this.intervalUpperBoundTextBox.Location = new System.Drawing.Point(190, 30);
             this.intervalUpperBoundTextBox.Name = "intervalUpperBoundTextBox";
             this.intervalUpperBoundTextBox.Size = new System.Drawing.Size(100, 22);
             this.intervalUpperBoundTextBox.TabIndex = 8;
             // 
             // StartButton
             // 
-            this.StartButton.Location = new System.Drawing.Point(327, 169);
+            this.StartButton.Location = new System.Drawing.Point(311, 84);
             this.StartButton.Name = "StartButton";
             this.StartButton.Size = new System.Drawing.Size(75, 23);
             this.StartButton.TabIndex = 9;
@@ -130,7 +136,7 @@
             // 
             // countButton
             // 
-            this.countButton.Location = new System.Drawing.Point(46, 218);
+            this.countButton.Location = new System.Drawing.Point(31, 25);
             this.countButton.Name = "countButton";
             this.countButton.Size = new System.Drawing.Size(75, 23);
             this.countButton.TabIndex = 10;
@@ -140,14 +146,14 @@
             // 
             // countTextBox
             // 
-            this.countTextBox.Location = new System.Drawing.Point(136, 219);
+            this.countTextBox.Location = new System.Drawing.Point(122, 25);
             this.countTextBox.Name = "countTextBox";
             this.countTextBox.Size = new System.Drawing.Size(100, 22);
             this.countTextBox.TabIndex = 11;
             // 
             // itemAmountTextBox
             // 
-            this.itemAmountTextBox.Location = new System.Drawing.Point(205, 170);
+            this.itemAmountTextBox.Location = new System.Drawing.Point(190, 84);
             this.itemAmountTextBox.Name = "itemAmountTextBox";
             this.itemAmountTextBox.Size = new System.Drawing.Size(100, 22);
             this.itemAmountTextBox.TabIndex = 12;
@@ -155,33 +161,63 @@
             // itemAmountLabel
             // 
             this.itemAmountLabel.AutoSize = true;
-            this.itemAmountLabel.Location = new System.Drawing.Point(202, 141);
+            this.itemAmountLabel.Location = new System.Drawing.Point(187, 64);
             this.itemAmountLabel.Name = "itemAmountLabel";
             this.itemAmountLabel.Size = new System.Drawing.Size(86, 17);
             this.itemAmountLabel.TabIndex = 13;
             this.itemAmountLabel.Text = "Item Amount";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.xTextBox);
+            this.panel1.Controls.Add(this.yTextBox);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Location = new System.Drawing.Point(15, 6);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(450, 60);
+            this.panel1.TabIndex = 14;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.itemAmountLabel);
+            this.panel2.Controls.Add(this.itemAmountTextBox);
+            this.panel2.Controls.Add(this.StartButton);
+            this.panel2.Controls.Add(this.intervalUpperBoundTextBox);
+            this.panel2.Controls.Add(this.intervalUpperBoundLabel);
+            this.panel2.Controls.Add(this.intervalLowerBoundLabel);
+            this.panel2.Controls.Add(this.intervalLowerBoundTextBox);
+            this.panel2.Location = new System.Drawing.Point(15, 72);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(450, 127);
+            this.panel2.TabIndex = 15;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.countTextBox);
+            this.panel3.Controls.Add(this.countButton);
+            this.panel3.Location = new System.Drawing.Point(15, 205);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(450, 74);
+            this.panel3.TabIndex = 16;
             // 
             // Click
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(491, 417);
-            this.Controls.Add(this.itemAmountLabel);
-            this.Controls.Add(this.itemAmountTextBox);
-            this.Controls.Add(this.countTextBox);
-            this.Controls.Add(this.countButton);
-            this.Controls.Add(this.StartButton);
-            this.Controls.Add(this.intervalUpperBoundTextBox);
-            this.Controls.Add(this.intervalUpperBoundLabel);
-            this.Controls.Add(this.intervalLowerBoundLabel);
-            this.Controls.Add(this.intervalLowerBoundTextBox);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.xTextBox);
-            this.Controls.Add(this.yTextBox);
-            this.Controls.Add(this.button1);
             this.Name = "Click";
             this.Text = "Click";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -203,6 +239,9 @@
         private System.Windows.Forms.TextBox countTextBox;
         private System.Windows.Forms.TextBox itemAmountTextBox;
         private System.Windows.Forms.Label itemAmountLabel;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
     }
 }
 
