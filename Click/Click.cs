@@ -122,6 +122,9 @@ namespace Click
             Int32.TryParse(intervalUpperBoundTextBox.Text, out int upperBound);
             Int32.TryParse(itemAmountTextBox.Text, out int itemAmount);
 
+            int X = Cursor.Position.X;
+            int Y = Cursor.Position.Y;
+
             for (int i = 0; i < itemAmount * 2; i++)
             {
                 wait = rnd.Next(lowerBound, upperBound);
@@ -129,6 +132,10 @@ namespace Click
                 SendInput((uint)MouseEvent.Length, MouseEvent, Marshal.SizeOf(MouseEvent[0].GetType()));
                 Thread.Sleep(wait);
                 count++;
+                if (X != Cursor.Position.X || Y != Cursor.Position.Y)
+                {
+                    break;
+                }
             }
         }
 
