@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -61,6 +62,7 @@ namespace Click
                     y = i;
                     mouseControlService.SimulateMouseMove(x, y);
                     mouseControlService.SimulateMouseClick();
+                    Thread.Sleep(2000);
                 }
                 else
                 {

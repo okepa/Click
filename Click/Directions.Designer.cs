@@ -30,7 +30,7 @@
         {
             this.addDirectionsButton = new System.Windows.Forms.Button();
             this.goButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.getCursorPositionButton = new System.Windows.Forms.Button();
             this.yTextBox = new System.Windows.Forms.TextBox();
             this.xTextBox = new System.Windows.Forms.TextBox();
             this.yLabel = new System.Windows.Forms.Label();
@@ -57,15 +57,15 @@
             this.goButton.UseVisualStyleBackColor = true;
             this.goButton.Click += new System.EventHandler(this.goButton_Click);
             // 
-            // button1
+            // getCursorPositionButton
             // 
-            this.button1.Location = new System.Drawing.Point(659, 50);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 44);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Get cursor position";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.getCursorPositionButton.Location = new System.Drawing.Point(659, 50);
+            this.getCursorPositionButton.Name = "getCursorPositionButton";
+            this.getCursorPositionButton.Size = new System.Drawing.Size(99, 44);
+            this.getCursorPositionButton.TabIndex = 2;
+            this.getCursorPositionButton.Text = "Get cursor position";
+            this.getCursorPositionButton.UseVisualStyleBackColor = true;
+            this.getCursorPositionButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // yTextBox
             // 
@@ -108,7 +108,7 @@
             this.Controls.Add(this.yLabel);
             this.Controls.Add(this.xTextBox);
             this.Controls.Add(this.yTextBox);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.getCursorPositionButton);
             this.Controls.Add(this.goButton);
             this.Controls.Add(this.addDirectionsButton);
             this.Name = "Directions";
@@ -122,7 +122,7 @@
 
         private System.Windows.Forms.Button addDirectionsButton;
         private System.Windows.Forms.Button goButton;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button getCursorPositionButton;
         private System.Windows.Forms.TextBox yTextBox;
         private System.Windows.Forms.TextBox xTextBox;
         private System.Windows.Forms.Label yLabel;
