@@ -30,6 +30,11 @@
         {
             this.addDirectionsButton = new System.Windows.Forms.Button();
             this.goButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.yTextBox = new System.Windows.Forms.TextBox();
+            this.xTextBox = new System.Windows.Forms.TextBox();
+            this.yLabel = new System.Windows.Forms.Label();
+            this.xLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // addDirectionsButton
@@ -52,16 +57,64 @@
             this.goButton.UseVisualStyleBackColor = true;
             this.goButton.Click += new System.EventHandler(this.goButton_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(659, 50);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(99, 44);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Get cursor position";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // yTextBox
+            // 
+            this.yTextBox.Location = new System.Drawing.Point(688, 132);
+            this.yTextBox.Name = "yTextBox";
+            this.yTextBox.Size = new System.Drawing.Size(100, 22);
+            this.yTextBox.TabIndex = 3;
+            // 
+            // xTextBox
+            // 
+            this.xTextBox.Location = new System.Drawing.Point(582, 132);
+            this.xTextBox.Name = "xTextBox";
+            this.xTextBox.Size = new System.Drawing.Size(100, 22);
+            this.xTextBox.TabIndex = 4;
+            // 
+            // yLabel
+            // 
+            this.yLabel.AutoSize = true;
+            this.yLabel.Location = new System.Drawing.Point(685, 102);
+            this.yLabel.Name = "yLabel";
+            this.yLabel.Size = new System.Drawing.Size(17, 17);
+            this.yLabel.TabIndex = 5;
+            this.yLabel.Text = "Y";
+            // 
+            // xLabel
+            // 
+            this.xLabel.AutoSize = true;
+            this.xLabel.Location = new System.Drawing.Point(579, 102);
+            this.xLabel.Name = "xLabel";
+            this.xLabel.Size = new System.Drawing.Size(17, 17);
+            this.xLabel.TabIndex = 6;
+            this.xLabel.Text = "X";
+            // 
             // Directions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.xLabel);
+            this.Controls.Add(this.yLabel);
+            this.Controls.Add(this.xTextBox);
+            this.Controls.Add(this.yTextBox);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.goButton);
             this.Controls.Add(this.addDirectionsButton);
             this.Name = "Directions";
             this.Text = "Directions";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -69,5 +122,10 @@
 
         private System.Windows.Forms.Button addDirectionsButton;
         private System.Windows.Forms.Button goButton;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox yTextBox;
+        private System.Windows.Forms.TextBox xTextBox;
+        private System.Windows.Forms.Label yLabel;
+        private System.Windows.Forms.Label xLabel;
     }
 }

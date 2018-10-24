@@ -4,7 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Click.Services
 {
@@ -53,5 +55,12 @@ namespace Click.Services
             SendInput((uint)MouseEvent.Length, MouseEvent, Marshal.SizeOf(MouseEvent[0].GetType()));
         }
 
+        public KeyValuePair<int, int> getCursorPosition()
+        {
+            Thread.Sleep(3000);
+            int X = Cursor.Position.X;
+            int Y = Cursor.Position.Y;
+            return new KeyValuePair<int, int>(X, Y);
+        }
     }
 }

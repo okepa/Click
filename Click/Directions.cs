@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Click.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace Click
 {
     public partial class Directions : Form
     {
+        MouseControlService mouseControlService = new MouseControlService();
         private int top = 80;
         public Directions()
         {
@@ -48,10 +50,30 @@ namespace Click
 
         private void goButton_Click(object sender, EventArgs e)
         {
-            foreach(var value in this.Controls.OfType<TextBox>())
+            int x = 0;
+            int y = 0;
+            foreach (var value in this.Controls.OfType<TextBox>())
             {
-                Console.WriteLine(value);
+                int i = 0;
+                Int32.TryParse(value.Text, out i);
+                if (i % 2 == 0)
+                {
+                    y = i;
+                    mouseControlService.SimulateMouseMove(x, y);
+                    mouseControlService.SimulateMouseClick();
+                }
+                else
+                {
+                    x = i;
+                }
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var twoNumbers = mouseControlService.getCursorPosition();
+            xTextBox.Text = twoNumbers.Key.ToString();
+            yTextBox.Text = twoNumbers.Value.ToString();
         }
     }
 }
