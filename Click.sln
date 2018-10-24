@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Click", "Click\Click.csproj", "{79338FAD-C53C-46B1-A156-7DA587412DF0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Click.Services", "Click.Services\Click.Services.csproj", "{40253B0E-6132-49A5-9213-874CBB5B7F66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Click.Models", "Click.Models\Click.Models.csproj", "{D439E158-7C6E-4CCA-A1CA-0C47F510C83E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{79338FAD-C53C-46B1-A156-7DA587412DF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79338FAD-C53C-46B1-A156-7DA587412DF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79338FAD-C53C-46B1-A156-7DA587412DF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40253B0E-6132-49A5-9213-874CBB5B7F66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40253B0E-6132-49A5-9213-874CBB5B7F66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40253B0E-6132-49A5-9213-874CBB5B7F66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40253B0E-6132-49A5-9213-874CBB5B7F66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D439E158-7C6E-4CCA-A1CA-0C47F510C83E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D439E158-7C6E-4CCA-A1CA-0C47F510C83E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D439E158-7C6E-4CCA-A1CA-0C47F510C83E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D439E158-7C6E-4CCA-A1CA-0C47F510C83E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -87,5 +87,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Click.Models\Click.Models.csproj">
+      <Project>{D439E158-7C6E-4CCA-A1CA-0C47F510C83E}</Project>
+      <Name>Click.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Click.Services\Click.Services.csproj">
+      <Project>{40253B0E-6132-49A5-9213-874CBB5B7F66}</Project>
+      <Name>Click.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

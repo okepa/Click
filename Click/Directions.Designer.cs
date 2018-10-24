@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.addDirectionsButton = new System.Windows.Forms.Button();
+            this.goButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // addDirectionsButton
@@ -41,11 +42,22 @@
             this.addDirectionsButton.UseVisualStyleBackColor = true;
             this.addDirectionsButton.Click += new System.EventHandler(this.addDirectionsButton_Click);
             // 
+            // goButton
+            // 
+            this.goButton.Location = new System.Drawing.Point(100, 347);
+            this.goButton.Name = "goButton";
+            this.goButton.Size = new System.Drawing.Size(75, 23);
+            this.goButton.TabIndex = 1;
+            this.goButton.Text = "Go";
+            this.goButton.UseVisualStyleBackColor = true;
+            this.goButton.Click += new System.EventHandler(this.goButton_Click);
+            // 
             // Directions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.goButton);
             this.Controls.Add(this.addDirectionsButton);
             this.Name = "Directions";
             this.Text = "Directions";
@@ -56,5 +68,6 @@
         #endregion
 
         private System.Windows.Forms.Button addDirectionsButton;
+        private System.Windows.Forms.Button goButton;
     }
 }
