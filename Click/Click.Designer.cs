@@ -45,6 +45,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.directionsButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -200,11 +201,22 @@
             this.panel3.Size = new System.Drawing.Size(450, 74);
             this.panel3.TabIndex = 16;
             // 
+            // directionsButton
+            // 
+            this.directionsButton.Location = new System.Drawing.Point(326, 303);
+            this.directionsButton.Name = "directionsButton";
+            this.directionsButton.Size = new System.Drawing.Size(90, 23);
+            this.directionsButton.TabIndex = 17;
+            this.directionsButton.Text = "Directions";
+            this.directionsButton.UseVisualStyleBackColor = true;
+            this.directionsButton.Click += new System.EventHandler(this.directionsButton_Click);
+            // 
             // Click
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(491, 417);
+            this.Controls.Add(this.directionsButton);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -242,6 +254,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button directionsButton;
     }
 }
 

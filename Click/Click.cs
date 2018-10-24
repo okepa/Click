@@ -143,6 +143,12 @@ namespace Click
         {
             count++;
             countTextBox.Text = count.ToString();
-        }    
+        }
+
+        private void directionsButton_Click(object sender, EventArgs e)
+        {
+            Directions directionsForm = new Directions();
+            directionsForm.Show();
+        }
     }
 }
